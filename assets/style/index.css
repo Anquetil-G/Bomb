@@ -63,7 +63,7 @@
     height: 97px;
 }
 .main-presentation {
-    padding: 0 30px 5px;
+    padding: 0 200px 25px;
     background: var(--color-dark-blue-1);
 }
 .title-presentation {
@@ -72,6 +72,11 @@
 }
 .description-presentation {
     color: var(--color-font-white-2);
+}
+@media screen and (max-width: 1100px) {
+    .main-presentation {
+        padding: 0 100px 25px;
+    }
 }
 @media screen and (max-width: 650px) {
     .start-cap-presentation {
