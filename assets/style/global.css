@@ -64,6 +64,9 @@ table {
 /* ---------------------------------- ROOT ---------------------------------- */
 
 :root {
+	--main-background-page: #fbfbfb;
+	--background-page-2: #efefef;
+	
 	--color-font-1: #202020;
 	--color-font-2: #313131;
 	--color-font-blue: #265bb6;
@@ -84,11 +87,55 @@ table {
 	--h3-font-size: 1.3rem;
 	--basic-font-size: 0.95rem;
 }
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-background-page: #212121;
+		--background-page-2: #2c2c2c;
+
+		--color-font-1: #f5f5f5;
+		--color-font-2: #e3e3e3;
+		--color-font-blue: #265bb6;
+		--color-font-white-1: #e1e0e0;
+		--color-font-white-2: #c5c5c5;
+		--color-font-white-3: #707070;
+		--color-font-black-1: #232323;
+		--color-font-black-2: #2e2e2e;
+		--color-font-black-3: #3e3e3e;
+	
+		--color-gold-1: #f2dd3c;
+		--color-gold-2: #edd560e4;
+		--color-dark-blue-1: #09172e;
+	
+		--grey-nuance-1: #c8c8c8;
+		--grey-nuance-2: #bababaeb;
+	
+		--padding-side: 155px;
+	
+		--h2-font-size: 1.7rem;
+		--h3-font-size: 1.3rem;
+		--basic-font-size: 0.95rem;
+	}
+	.long-card-container .basic-text, .description-long-card ul li {
+		color: var(--color-font-black-2) !important;
+	}
+	.basic-card-container .basic-text {
+		color: var(--color-font-black-2);
+	}
+	.long-card-container .title-h3 {
+		color: var(--color-font-black-1);
+	}
+	.basic-card-container .title-h3 {
+		color: var(--color-font-black-1);
+	}
+	.logo-navbar {
+		color: var(--color-font-1);
+	}
+}
 
 /* ------------------------------- BACKGROUND ------------------------------- */
 
 .basic-background {
-	background-color: #fbfbfb;
+	background-color: var(--main-background-page);
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(113,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2356CBFF'/%3E%3Cstop offset='1' stop-color='%23287EFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(293,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF4343'/%3E%3Cstop offset='1' stop-color='%23FFDD4C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(-18.2 -10.4) rotate(-10.4 1409 581) scale(0.922)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='translate(-65 26) rotate(-5.2 800 450) scale(0.987)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-18.2 39) rotate(-65 401 736) scale(0.987)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(156 15.6) rotate(-3.9 150 345) scale(1.026)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='translate(39 -78) rotate(-93.6 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-10.4 -10.4) rotate(-15.6 1400 132) scale(0.87)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	background-attachment: fixed;
 	background-size: cover;
@@ -199,7 +246,7 @@ nav ul li:hover {
 		padding: 18px 8px 18px 8px !important;
 	}
 	#sideBar {
-		background: white;
+		background: var(--background-page-2);
 		position: fixed;
 		width: 90vw;
 		height: 100vh;
@@ -321,6 +368,7 @@ nav ul li:hover {
 }
 .description-long-card ul li {
 	margin: 5px 0;
+	color: var(--color-font-2);
 }
 .description-long-card ul li i {
 	width: 25px;
