@@ -1,0 +1,145 @@
+/* ----------------------------- POPULAR-SEARCH ----------------------------- */
+
+.popular-search {
+    padding: 100px 50px 80px;
+}
+.popular-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.image-basic-card-html-css {
+    background: url(../img/html-css.webp) center/cover;
+}
+.image-basic-card-javascript {
+    background: url(../img/javascript.webp) center/cover;
+}
+.image-basic-card-php {
+    background: url(../img/php.webp) center/cover;
+}
+.image-basic-card-menu-popular-search {
+    background: url(../img/menu-popular-search.webp) center/cover;
+}
+@media screen and (max-width: 975px) {
+    .popular-search-container {
+        gap: 20px;
+    }
+    .popular-search {
+        padding: 100px 30px 80px;
+    }
+}
+@media screen and (min-width: 635px) {
+    .menu-popular-search {
+        display: none;
+    }
+}
+@media screen and (max-width: 635px) {
+    .st-popular-search {
+        display: none;
+    }
+    .nd-popular-search {
+        display: none;
+    }
+    .rd-popular-search {
+        display: none;
+    }
+    .popular-search {
+        padding: 70px 30px 30px;
+    }
+}
+
+/* ------------------------------ PRESENTATION ------------------------------ */
+
+.presentation {
+    padding: 70px 0;
+    text-align: center;
+}
+.start-cap-presentation {
+    height: 97px;
+}
+.end-cap-presentation {
+    transform: rotate(180deg);
+    height: 97px;
+}
+.main-presentation {
+    padding: 0 30px 5px;
+    background: var(--color-dark-blue-1);
+}
+.title-presentation {
+    color: var(--color-font-white-1);
+    margin-bottom: 15px;
+}
+.description-presentation {
+    color: var(--color-font-white-2);
+}
+@media screen and (max-width: 650px) {
+    .start-cap-presentation {
+        height: 69px;
+    }
+    .end-cap-presentation {
+        height: 69px;
+    }
+    .start-cap-presentation svg {
+        height: 70px;
+    }
+    .end-cap-presentation svg {
+        height: 70px;
+    }
+    .main-presentation {
+        padding: 17px 20px 20px;
+    }
+    .presentation h2 {
+        text-align: center;
+    }
+    .presentation {
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 395px) {
+    .start-cap-presentation {
+        height: 44px;
+    }
+    .end-cap-presentation {
+        height: 44px;
+    }
+    .start-cap-presentation svg {
+        height: 45px;
+    }
+    .end-cap-presentation svg {
+        height: 45px;
+    }
+    .main-presentation {
+        padding: 17px 20px 20px;
+    }
+}
+
+/* --------------------------------- OFFERS --------------------------------- */
+
+.offers {
+    padding: 70px 50px;
+}
+.offers-container {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+.description-long-card ul li .fa-bomb {
+    color: #ffffff00;
+}
+@media screen and (max-width: 845px) {
+    .offers {
+        padding: 70px 25px;
+    }
+    .offers-container {
+        gap: 23px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .offers {
+        padding: 30px 25px;
+    }
+    .offers-container {
+        flex-wrap: wrap;
+    }
+}
